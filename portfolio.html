@@ -551,46 +551,52 @@
             </h2>
 
             <div class="certifications-grid">
-                <div class="cert-card" data-aos="flip-up" data-aos-delay="100">
-                    <div class="cert-icon"><i class="fab fa-python"></i></div>
-                    <h3 class="cert-title">Python for Data Science</h3>
-                    <p class="cert-issuer">IBM - Coursera</p>
-                    <p class="cert-date">2023</p>
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="100" onclick="openCertModal('assets/Guvi-python.png')">
+                    <div class="cert-image-wrapper">
+                        <img src="assets/Guvi-python.png" alt="GUVI Python Certification" class="cert-thumbnail">
+                    </div>
+                    <h3 class="cert-title">Python Programming</h3>
+                    <p class="cert-issuer">GUVI</p>
                 </div>
 
-                <div class="cert-card" data-aos="flip-up" data-aos-delay="200">
-                    <div class="cert-icon"><i class="fas fa-brain"></i></div>
-                    <h3 class="cert-title">Machine Learning Specialization</h3>
-                    <p class="cert-issuer">Stanford - Coursera</p>
-                    <p class="cert-date">2022</p>
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="200" onclick="openCertModal('assets/Guvi.png')">
+                    <div class="cert-image-wrapper">
+                        <img src="assets/Guvi.png" alt="GUVI Certification" class="cert-thumbnail">
+                    </div>
+                    <h3 class="cert-title">Full Stack with Python Programming</h3>
+                    <p class="cert-issuer">GUVI</p>
                 </div>
 
-                <div class="cert-card" data-aos="flip-up" data-aos-delay="300">
-                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
-                    <h3 class="cert-title">AWS Cloud Practitioner</h3>
-                    <p class="cert-issuer">Amazon Web Services</p>
-                    <p class="cert-date">2023</p>
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="300" onclick="openCertModal('assets/nm-cloudengineering.jpg')">
+                    <div class="cert-image-wrapper">
+                        <img src="assets/nm-cloudengineering.jpg" alt="Cloud Engineering" class="cert-thumbnail">
+                    </div>
+                    <h3 class="cert-title">Cloud Engineering by Google</h3>
+                    <p class="cert-issuer">NAAN MUDHALVAN</p>
                 </div>
 
-                <div class="cert-card" data-aos="flip-up" data-aos-delay="400">
-                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-                    <h3 class="cert-title">Full Stack Development</h3>
-                    <p class="cert-issuer">Udemy</p>
-                    <p class="cert-date">2022</p>
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="400" onclick="openCertModal('assets/nm-dataanalytics.jpg')">
+                    <div class="cert-image-wrapper">
+                        <img src="assets/nm-dataanalytics.jpg" alt="Data Analytics" class="cert-thumbnail">
+                    </div>
+                    <h3 class="cert-title">Data Analytics by Google</h3>
+                    <p class="cert-issuer">NAAN MUDHALVAN</p>
                 </div>
 
-                <div class="cert-card" data-aos="flip-up" data-aos-delay="500">
-                    <div class="cert-icon"><i class="fas fa-database"></i></div>
-                    <h3 class="cert-title">Database Management</h3>
-                    <p class="cert-issuer">Oracle University</p>
-                    <p class="cert-date">2021</p>
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="500" onclick="openCertModal('assets/nm-mad.jpg')">
+                    <div class="cert-image-wrapper">
+                        <img src="assets/nm-mad.jpg" alt="Mobile Application Development" class="cert-thumbnail">
+                    </div>
+                    <h3 class="cert-title">Mobile App Development</h3>
+                    <p class="cert-issuer">NAAN MUDHALVAN</p>
                 </div>
 
-                <div class="cert-card" data-aos="flip-up" data-aos-delay="600">
-                    <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3 class="cert-title">Cybersecurity Fundamentals</h3>
-                    <p class="cert-issuer">Cisco NetAcad</p>
-                    <p class="cert-date">2023</p>
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="600" onclick="openCertModal('assets/Oracle.jpg')">
+                    <div class="cert-image-wrapper">
+                        <img src="assets/Oracle.jpg" alt="Oracle Certification" class="cert-thumbnail">
+                    </div>
+                    <h3 class="cert-title">Oracle Cloud Infrastructure</h3>
+                    <p class="cert-issuer">Oracle</p>
                 </div>
             </div>
         </div>
@@ -700,6 +706,17 @@
                 <i class="fas fa-times"></i>
             </button>
             <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- ===================== CERTIFICATE MODAL ===================== -->
+    <div class="cert-modal" id="certModal">
+        <div class="cert-modal-overlay" onclick="closeCertModal()"></div>
+        <div class="cert-modal-content">
+            <button class="cert-modal-close" onclick="closeCertModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="certModalImage" src="" alt="Certificate" class="cert-modal-image">
         </div>
     </div>
 

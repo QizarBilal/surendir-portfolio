@@ -615,6 +615,29 @@ const optimizedScrollHandler = debounce(() => {
 
 window.addEventListener('scroll', optimizedScrollHandler);
 
+// ==================== CERTIFICATE MODAL ====================
+function openCertModal(imageSrc) {
+    const certModal = document.getElementById('certModal');
+    const certModalImage = document.getElementById('certModalImage');
+    
+    certModalImage.src = imageSrc;
+    certModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeCertModal() {
+    const certModal = document.getElementById('certModal');
+    certModal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+// Close modal on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeCertModal();
+    }
+});
+
 // ==================== CONSOLE MESSAGE ====================
 console.log('%c🚀 Welcome to Surendiran V\'s Portfolio! 🚀', 'color: #27D166; font-size: 20px; font-weight: bold;');
 console.log('%cBuilt with ❤ using HTML, CSS, and JavaScript', 'color: #0f2744; font-size: 14px;');
