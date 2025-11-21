@@ -49,7 +49,7 @@ function startLoadingAnimation() {
             
             // Redirect to main portfolio after reaching 100%
             setTimeout(() => {
-                window.location.href = 'index.html';
+                window.location.href = 'portfolio.html';
             }, 300);
         }
         

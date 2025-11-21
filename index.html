@@ -3,716 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surendiran V | Assistant Professor & Tech Educator</title>
+    <title>Welcome | Surendiran V</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90' fill='%2327D166'>✝</text></svg>">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/splash.css">
 </head>
-<body data-theme="dark">
-    
-    <!-- Floating Background Elements -->
-    <div class="bg-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
+<body>
+    <!-- Animated Background Particles -->
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
     </div>
 
-    <!-- ===================== NAVIGATION BAR ===================== -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">✝</span>
+    <!-- Main Splash Content -->
+    <div class="splash-container">
+        <!-- Animated Logo -->
+        <div class="logo-container">
+            <div class="logo-circle">
+                <svg class="logo-svg" viewBox="0 0 200 200">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#27D166;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#3be67d;stop-opacity:1" />
+                        </linearGradient>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <text x="100" y="120" class="logo-text" fill="url(#logoGradient)" filter="url(#glow)">SV</text>
+                </svg>
             </div>
-            
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-
-            <!-- Theme Toggle Switch -->
-            <div class="theme-toggle-wrapper">
-                <input type="checkbox" id="themeToggle" class="theme-toggle-checkbox">
-                <label for="themeToggle" class="theme-toggle-label">
-                    <span class="theme-toggle-slider">
-                        <i class="fas fa-sun"></i>
-                        <i class="fas fa-moon"></i>
-                    </span>
-                </label>
-            </div>
-
-            <!-- Mobile Menu Toggle -->
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <div class="logo-ring"></div>
+            <div class="logo-ring-2"></div>
         </div>
-    </nav>
 
-    <!-- ===================== HERO SECTION ===================== -->
-    <section class="hero" id="home">
-        <div class="hero-particles">
-            <div class="hero-particle"></div>
-            <div class="hero-particle"></div>
-            <div class="hero-particle"></div>
-            <div class="hero-particle"></div>
-            <div class="hero-particle"></div>
-        </div>
-        
-        <div class="hero-content">
-            <div class="hero-greeting" data-aos="fade-down">Hello, World!</div>
-            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
-                I'm <span class="highlight-name">Surendiran V</span>
-            </h1>
-            <div class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">
-                <span class="typing-text"></span>
-                <span class="cursor">|</span>
-            </div>
-            <p class="hero-description" data-aos="fade-up" data-aos-delay="600">
-                Passionate Assistant Professor at Priyadharshini Engineering College,<br>
-                empowering students through technology and innovation.
-            </p>
-            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="800">
-                <a href="#contact" class="btn btn-primary">
-                    <span>Contact Me</span>
-                    <i class="fas fa-paper-plane"></i>
-                </a>
-                <a href="#" class="btn btn-secondary" id="downloadResume">
-                    <span>Download Resume</span>
-                    <i class="fas fa-download"></i>
-                </a>
-            </div>
-            <div class="hero-scroll" data-aos="fade-up" data-aos-delay="1000">
-                <div class="scroll-indicator">
-                    <span>Scroll Down</span>
-                    <div class="scroll-arrow"></div>
-                </div>
+        <!-- Welcome Text -->
+        <div class="welcome-text">
+            <h1 class="welcome-title">Welcome to the World of</h1>
+            <h2 class="name-title">Surendiran V</h2>
+            <div class="role-container">
+                <span class="role-prefix">A Passionate</span>
+                <span class="role-text" id="roleText">Educator</span>
             </div>
         </div>
 
-        <!-- 3D Floating Elements -->
-        <div class="floating-element floating-element-1"></div>
-        <div class="floating-element floating-element-2"></div>
-        <div class="floating-element floating-element-3"></div>
-    </section>
-
-    <!-- ===================== ABOUT SECTION ===================== -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">
-                About Me
-                <div class="title-line"></div>
-            </h2>
-
-            <div class="about-content">
-                <div class="about-image" data-aos="fade-right">
-                    <div class="image-wrapper">
-                        <img src="assets/profile.jpg" alt="Surendiran V" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22%3E%3Crect width=%22400%22 height=%22400%22 fill=%22%23dc143c%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2280%22 fill=%22white%22%3ESV%3C/text%3E%3C/svg%3E'">
-                        <div class="image-glow"></div>
-                    </div>
+        <!-- Futuristic Loading Bar -->
+        <div class="loading-section">
+            <div class="loading-bar-container">
+                <div class="loading-bar" id="loadingBar">
+                    <div class="loading-shine"></div>
                 </div>
-
-                <div class="about-text" data-aos="fade-left">
-                    <p class="about-paragraph">
-                        Hello! I'm <strong>Surendiran V</strong>, an Assistant Professor at 
-                        <strong>Priyadharshini Engineering College</strong>. With a passion for education 
-                        and technology, I strive to bridge the gap between theoretical knowledge and 
-                        practical application.
-                    </p>
-                    <p class="about-paragraph">
-                        My journey in academia has been enriched by hands-on experience in software 
-                        development, machine learning, and web technologies. I believe in empowering 
-                        students with skills that matter in the real world.
-                    </p>
-                    <p class="about-paragraph">
-                        Beyond teaching, I'm deeply involved in innovative projects, research, and 
-                        developing solutions that make a difference. My goal is to inspire the next 
-                        generation of tech leaders.
-                    </p>
-
-                    <!-- Statistics -->
-                    <div class="about-stats">
-                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
-                            <div class="stat-number">5+</div>
-                            <div class="stat-label">Years Experience</div>
-                        </div>
-                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
-                            <div class="stat-number">500+</div>
-                            <div class="stat-label">Students Taught</div>
-                        </div>
-                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="600">
-                            <div class="stat-number">10+</div>
-                            <div class="stat-label">Projects Completed</div>
-                        </div>
-                    </div>
-                </div>
+                <div class="loading-glow"></div>
+            </div>
+            <div class="loading-text">
+                <span id="loadingPercent">0</span>%
+                <span class="loading-status">Initializing Experience...</span>
             </div>
         </div>
-    </section>
 
-    <!-- ===================== EXPERIENCE SECTION ===================== -->
-    <section class="experience" id="experience">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">
-                Professional Experience
-                <div class="title-line"></div>
-            </h2>
-
-            <div class="timeline">
-                <!-- Experience Item 1 -->
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Oct 2022 - Present</div>
-                        <h3 class="timeline-title">Assistant Professor</h3>
-                        <h4 class="timeline-company">Priyadharshini Engineering College</h4>
-                        <p class="timeline-description">
-                            Teaching core computer science subjects, mentoring students in final year 
-                            projects, conducting workshops on emerging technologies, and contributing 
-                            to curriculum development.
-                        </p>
-                        <div class="timeline-tags">
-                            <span class="tag">Teaching</span>
-                            <span class="tag">Mentoring</span>
-                            <span class="tag">Research</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Experience Item 2 -->
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">May 2020 - Sep 2022</div>
-                        <h3 class="timeline-title">Operations Leader</h3>
-                        <h4 class="timeline-company">Infinite Security Service</h4>
-                        <p class="timeline-description">
-                            Led operational strategies for security initiatives, coordinated cross-functional 
-                            teams, and managed project lifecycles from conception to deployment.
-                        </p>
-                        <div class="timeline-tags">
-                            <span class="tag">Leadership</span>
-                            <span class="tag">Operations</span>
-                            <span class="tag">Strategy</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Experience Item 3 -->
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Jun 2019 - Jan 2020</div>
-                        <h3 class="timeline-title">Lab Assistant</h3>
-                        <h4 class="timeline-company">Saveetha Engineering College, MAD Lab</h4>
-                        <p class="timeline-description">
-                            Assisted in laboratory sessions, maintained computing infrastructure, 
-                            helped students with practical implementations, and supported faculty 
-                            in research activities.
-                        </p>
-                        <div class="timeline-tags">
-                            <span class="tag">Lab Management</span>
-                            <span class="tag">Student Support</span>
-                            <span class="tag">Technical Assistance</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== SKILLS SECTION ===================== -->
-    <section class="skills" id="skills">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">
-                Skills & Expertise
-                <div class="title-line"></div>
-            </h2>
-
-            <!-- Skills Tabs -->
-            <div class="skills-tabs" data-aos="fade-up" data-aos-delay="200">
-                <button class="skill-tab active" data-tab="technical">Technical Skills</button>
-                <button class="skill-tab" data-tab="teaching">Teaching Skills</button>
-                <button class="skill-tab" data-tab="tools">Tools & Platforms</button>
-            </div>
-
-            <!-- Technical Skills -->
-            <div class="skills-content active" id="technical">
-                <div class="skills-grid">
-                    <div class="skill-card" data-aos="flip-left" data-aos-delay="100">
-                        <div class="skill-icon"><i class="fab fa-python"></i></div>
-                        <h3 class="skill-name">Python</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="90"></div>
-                        </div>
-                        <div class="skill-percent">90%</div>
-                    </div>
-
-                    <div class="skill-card" data-aos="flip-left" data-aos-delay="200">
-                        <div class="skill-icon"><i class="fab fa-java"></i></div>
-                        <h3 class="skill-name">Java</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="85"></div>
-                        </div>
-                        <div class="skill-percent">85%</div>
-                    </div>
-
-                    <div class="skill-card" data-aos="flip-left" data-aos-delay="300">
-                        <div class="skill-icon"><i class="fas fa-database"></i></div>
-                        <h3 class="skill-name">SQL/Database</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="88"></div>
-                        </div>
-                        <div class="skill-percent">88%</div>
-                    </div>
-
-                    <div class="skill-card" data-aos="flip-left" data-aos-delay="400">
-                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
-                        <h3 class="skill-name">HTML/CSS</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="92"></div>
-                        </div>
-                        <div class="skill-percent">92%</div>
-                    </div>
-
-                    <div class="skill-card" data-aos="flip-left" data-aos-delay="500">
-                        <div class="skill-icon"><i class="fab fa-js"></i></div>
-                        <h3 class="skill-name">JavaScript</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="87"></div>
-                        </div>
-                        <div class="skill-percent">87%</div>
-                    </div>
-
-                    <div class="skill-card" data-aos="flip-left" data-aos-delay="600">
-                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
-                        <h3 class="skill-name">Machine Learning</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="83"></div>
-                        </div>
-                        <div class="skill-percent">83%</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Teaching Skills -->
-            <div class="skills-content" id="teaching">
-                <div class="skills-grid">
-                    <div class="skill-card" data-aos="flip-left" data-aos-delay="100">
-                        <div class="skill-icon"><i class="fas fa-chalkboard-teacher"></i></div>
-                        <h3 class="skill-name">Classroom Teaching</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="95"></div>
-                        </div>
-                        <div class="skill-percent">95%</div>
-                    </div>
-
-                    <div class="skill-card" data-aos="flip-left" data-aos-delay="200">
-                        <div class="skill-icon"><i class="fas fa-users"></i></div>
-                        <h3 class="skill-name">Student Mentoring</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="93"></div>
-                        </div>
-                        <div class="skill-percent">93%</div>
-                    </div>
-
-                    <div class="skill-card" data-aos="flip-left" data-aos-delay="300">
-                        <div class="skill-icon"><i class="fas fa-book"></i></div>
-                        <h3 class="skill-name">Curriculum Design</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="88"></div>
-                        </div>
-                        <div class="skill-percent">88%</div>
-                    </div>
-
-                    <div class="skill-card" data-aos="flip-left" data-aos-delay="400">
-                        <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
-                        <h3 class="skill-name">Project Guidance</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="91"></div>
-                        </div>
-                        <div class="skill-percent">91%</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tools & Platforms -->
-            <div class="skills-content" id="tools">
-                <div class="skills-grid">
-                    <div class="skill-card" data-aos="flip-left" data-aos-delay="100">
-                        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
-                        <h3 class="skill-name">Git & GitHub</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="89"></div>
-                        </div>
-                        <div class="skill-percent">89%</div>
-                    </div>
-
-                    <div class="skill-card" data-aos="flip-left" data-aos-delay="200">
-                        <div class="skill-icon"><i class="fab fa-docker"></i></div>
-                        <h3 class="skill-name">Docker</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="80"></div>
-                        </div>
-                        <div class="skill-percent">80%</div>
-                    </div>
-
-                    <div class="skill-card" data-aos="flip-left" data-aos-delay="300">
-                        <div class="skill-icon"><i class="fas fa-code"></i></div>
-                        <h3 class="skill-name">VS Code</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="94"></div>
-                        </div>
-                        <div class="skill-percent">94%</div>
-                    </div>
-
-                    <div class="skill-card" data-aos="flip-left" data-aos-delay="400">
-                        <div class="skill-icon"><i class="fas fa-server"></i></div>
-                        <h3 class="skill-name">Linux/Unix</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="86"></div>
-                        </div>
-                        <div class="skill-percent">86%</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== PROJECTS SECTION ===================== -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">
-                Featured Projects
-                <div class="title-line"></div>
-            </h2>
-
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&q=80" alt="Machine Learning Prefetching System" style="width: 100%; height: 100%; object-fit: cover;">
-                        <div class="project-overlay">
-                            <button class="project-btn" onclick="openProjectModal('project1')">
-                                <i class="fas fa-eye"></i> View Details
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">ML-Based Prefetching System</h3>
-                        <p class="project-description">
-                            Advanced machine learning-based prefetching mechanism to optimize system performance 
-                            and reduce latency in data retrieval operations.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">ML</span>
-                            <span class="tag">Optimization</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80" alt="Behavioral User Identification" style="width: 100%; height: 100%; object-fit: cover;">
-                        <div class="project-overlay">
-                            <button class="project-btn" onclick="openProjectModal('project2')">
-                                <i class="fas fa-eye"></i> View Details
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Behavioral User Identification System</h3>
-                        <p class="project-description">
-                            Intelligent user identification system using behavioral analysis and pattern 
-                            recognition for enhanced security and personalization.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">AI</span>
-                            <span class="tag">Security</span>
-                            <span class="tag">Analytics</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80" alt="College Website Development" style="width: 100%; height: 100%; object-fit: cover;">
-                        <div class="project-overlay">
-                            <button class="project-btn" onclick="openProjectModal('project3')">
-                                <i class="fas fa-eye"></i> View Details
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">College Website Development</h3>
-                        <p class="project-description">
-                            Modern, responsive college website with dynamic content management, student 
-                            portal, and administrative features.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Web Dev</span>
-                            <span class="tag">Responsive</span>
-                            <span class="tag">CMS</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1617802690992-15d93263d3a9?w=800&q=80" alt="Virtual Campus Tour Application" style="width: 100%; height: 100%; object-fit: cover;">
-                        <div class="project-overlay">
-                            <button class="project-btn" onclick="openProjectModal('project4')">
-                                <i class="fas fa-eye"></i> View Details
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Interactive 360° Virtual Campus Tour</h3>
-                        <p class="project-description">
-                            Immersive 360° virtual tour application showcasing college facilities with 
-                            interactive hotspots and multimedia content.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">3D</span>
-                            <span class="tag">Interactive</span>
-                            <span class="tag">VR</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== EDUCATION SECTION ===================== -->
-    <section class="education" id="education">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">
-                Educational Background
-                <div class="title-line"></div>
-            </h2>
-
-            <div class="education-timeline">
-                <!-- Education Item 1 -->
-                <div class="education-item" data-aos="fade-right">
-                    <div class="education-year">2018 - 2020</div>
-                    <div class="education-card">
-                        <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
-                        <h3 class="education-degree">Master of Engineering (M.E.)</h3>
-                        <h4 class="education-field">Computer Science & Engineering</h4>
-                        <p class="education-institution">Anna University, Chennai</p>
-                        <div class="education-grade">CGPA: 8.5/10</div>
-                    </div>
-                </div>
-
-                <!-- Education Item 2 -->
-                <div class="education-item" data-aos="fade-left">
-                    <div class="education-year">2014 - 2018</div>
-                    <div class="education-card">
-                        <div class="education-icon"><i class="fas fa-user-graduate"></i></div>
-                        <h3 class="education-degree">Bachelor of Engineering (B.E.)</h3>
-                        <h4 class="education-field">Computer Science & Engineering</h4>
-                        <p class="education-institution">Anna University, Chennai</p>
-                        <div class="education-grade">CGPA: 8.2/10</div>
-                    </div>
-                </div>
-
-                <!-- Education Item 3 -->
-                <div class="education-item" data-aos="fade-right">
-                    <div class="education-year">2012 - 2014</div>
-                    <div class="education-card">
-                        <div class="education-icon"><i class="fas fa-school"></i></div>
-                        <h3 class="education-degree">Higher Secondary (12th)</h3>
-                        <h4 class="education-field">Computer Science</h4>
-                        <p class="education-institution">State Board, Tamil Nadu</p>
-                        <div class="education-grade">Percentage: 92%</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== CERTIFICATIONS SECTION ===================== -->
-    <section class="certifications" id="certifications">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">
-                Certifications & Achievements
-                <div class="title-line"></div>
-            </h2>
-
-            <div class="certifications-grid">
-                <div class="cert-card" data-aos="flip-up" data-aos-delay="100">
-                    <div class="cert-icon"><i class="fab fa-python"></i></div>
-                    <h3 class="cert-title">Python for Data Science</h3>
-                    <p class="cert-issuer">IBM - Coursera</p>
-                    <p class="cert-date">2023</p>
-                </div>
-
-                <div class="cert-card" data-aos="flip-up" data-aos-delay="200">
-                    <div class="cert-icon"><i class="fas fa-brain"></i></div>
-                    <h3 class="cert-title">Machine Learning Specialization</h3>
-                    <p class="cert-issuer">Stanford - Coursera</p>
-                    <p class="cert-date">2022</p>
-                </div>
-
-                <div class="cert-card" data-aos="flip-up" data-aos-delay="300">
-                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
-                    <h3 class="cert-title">AWS Cloud Practitioner</h3>
-                    <p class="cert-issuer">Amazon Web Services</p>
-                    <p class="cert-date">2023</p>
-                </div>
-
-                <div class="cert-card" data-aos="flip-up" data-aos-delay="400">
-                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-                    <h3 class="cert-title">Full Stack Development</h3>
-                    <p class="cert-issuer">Udemy</p>
-                    <p class="cert-date">2022</p>
-                </div>
-
-                <div class="cert-card" data-aos="flip-up" data-aos-delay="500">
-                    <div class="cert-icon"><i class="fas fa-database"></i></div>
-                    <h3 class="cert-title">Database Management</h3>
-                    <p class="cert-issuer">Oracle University</p>
-                    <p class="cert-date">2021</p>
-                </div>
-
-                <div class="cert-card" data-aos="flip-up" data-aos-delay="600">
-                    <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3 class="cert-title">Cybersecurity Fundamentals</h3>
-                    <p class="cert-issuer">Cisco NetAcad</p>
-                    <p class="cert-date">2023</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== CONTACT SECTION ===================== -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">
-                Get In Touch
-                <div class="title-line"></div>
-            </h2>
-
-            <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right">
-                    <h3 class="contact-subtitle">Let's Connect</h3>
-                    <p class="contact-text">
-                        I'm always open to discussing new projects, creative ideas, or opportunities 
-                        to be part of your vision. Feel free to reach out!
-                    </p>
-
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                            <div>
-                                <h4>Email</h4>
-                                <a href="mailto:surendiran.masterofengineer@gmail.com">surendiran.masterofengineer@gmail.com</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
-                            <div>
-                                <h4>Phone</h4>
-                                <a href="tel:+919655272033">+91 96552 72033</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Bangi Nager, Devalapuram<br>Ambur, Tamil Nadu</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/surendiran-v-930442136" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/surendiranv1995" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://www.facebook.com/surendiran.michel" target="_blank" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/surendiran_michel" target="_blank" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-
-                <div class="contact-form-wrapper" data-aos="fade-left">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" required>
-                            <label for="name">Your Name</label>
-                            <div class="form-border"></div>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" required>
-                            <label for="email">Your Email</label>
-                            <div class="form-border"></div>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" required>
-                            <label for="subject">Subject</label>
-                            <div class="form-border"></div>
-                        </div>
-
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                            <label for="message">Your Message</label>
-                            <div class="form-border"></div>
-                        </div>
-
-                        <button type="submit" class="submit-btn">
-                            <span>Send Message</span>
-                            <div class="btn-ripple"></div>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== FOOTER ===================== -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Surendiran V. Designed & Built with <span class="heart">❤</span></p>
-                <p class="footer-tagline">Empowering minds, one line of code at a time.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- ===================== PROJECT MODAL ===================== -->
-    <div class="modal" id="projectModal">
-        <div class="modal-overlay" onclick="closeProjectModal()"></div>
-        <div class="modal-content">
-            <button class="modal-close" onclick="closeProjectModal()">
-                <i class="fas fa-times"></i>
-            </button>
-            <div id="modalBody"></div>
-        </div>
+        <!-- Decorative Elements -->
+        <div class="corner-decor top-left"></div>
+        <div class="corner-decor top-right"></div>
+        <div class="corner-decor bottom-left"></div>
+        <div class="corner-decor bottom-right"></div>
     </div>
 
-    <!-- ===================== FLOATING WHATSAPP BUTTON ===================== -->
-    <a href="https://wa.me/919655272033" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <!-- Audio Element (Optional) -->
+    <!-- <audio id="whooshSound" src="assets/whoosh.mp3" preload="auto"></audio> -->
 
-    <!-- ===================== SCROLL TO TOP BUTTON ===================== -->
-    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <script src="js/script.js"></script>
+    <script src="js/splash.js"></script>
 </body>
 </html>
